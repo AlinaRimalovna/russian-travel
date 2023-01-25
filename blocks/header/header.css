@@ -1,4 +1,14 @@
 .header {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
+  margin: 0 48px;
+  padding-top: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 }

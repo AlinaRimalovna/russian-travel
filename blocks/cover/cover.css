@@ -1,0 +1,10 @@
+.cover {
+  max-width: 1184px;
+  max-height: 740px;
+  width: 100%;
+  margin: 0 auto 92px;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+  grid-template-rows: 1fr repeat(2, minmax(min-content, max-content)) 1fr;
+}

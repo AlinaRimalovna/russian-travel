@@ -1,0 +1,43 @@
+.place {
+  display: grid;
+  grid-template-columns: fit-content(460px) minmax(320px, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(92px, 1fr));
+  grid-template-areas:
+    "title website"
+    "image paragraph";
+  column-gap: 40px;
+  color: #FFFFFF;
+  margin: 0 auto 80px;
+  width: 100%;
+}
+
+.place:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .place {
+    grid-template-columns: fit-content(440px) minmax(320px, 1fr);
+    column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .place {
+    grid-template-columns: fit-content(340px) minmax(320px, 1fr);
+    column-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .place {
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(92px, 1fr));
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraph";
+  }
+}

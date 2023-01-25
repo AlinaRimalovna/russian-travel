@@ -1,0 +1,20 @@
+.place__paragraph {
+  align-self: start;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  margin: 0 0 26px 0;
+}
+
+.place__paragraph:nth-of-type(2n) {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .place__paragraph {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
