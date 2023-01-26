@@ -31,13 +31,13 @@
 
 @media screen and (max-width: 635px) {
   .place {
-    display: grid;
     grid-template-columns: minmax(320px, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax(92px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(35px, 1fr));
     grid-template-areas:
       "title"
       "website"
       "image"
       "paragraph";
+    margin: 0 auto 50px;
   }
 }

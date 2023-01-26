@@ -1,0 +1,27 @@
+.cover__link {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+  grid-template-rows: 1fr repeat(2, minmax(min-content, max-content)) 1fr;
+  max-width: 1184px;
+  aspect-ratio: 1184/740;
+  width: 100%;
+  margin: 0 auto 92px;
+  color: #FFFFFF;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.cover__link::before {
+  content: "";
+  background-color: #2A2C2F;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cover__link:hover::before {
+  opacity: 0.8;
+}

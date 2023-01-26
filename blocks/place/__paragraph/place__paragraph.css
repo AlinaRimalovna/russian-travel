@@ -8,7 +8,7 @@
   margin: 0 0 26px 0;
 }
 
-.place__paragraph:nth-of-type(2n) {
+.place__paragraph:last-child {
   margin: 0;
 }
 
